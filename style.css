@@ -1,0 +1,158 @@
+.retirement-game {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  color: #1a1a1a;
+  background: linear-gradient(180deg, #f7f3e9 0%, #e8dcc8 100%);
+  font: 14px/1.45 system-ui, -apple-system, sans-serif;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.retirement-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 8px 10px;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+.retirement-header h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.retirement-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.retirement-stat {
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.retirement-stat strong {
+  display: block;
+  font-size: 20px;
+  font-variant-numeric: tabular-nums;
+}
+
+.retirement-stat small {
+  color: #555;
+}
+
+.retirement-generators {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.retirement-gen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 10px;
+  gap: 8px;
+}
+
+.retirement-gen .info {
+  flex: 1;
+}
+
+.retirement-gen .info strong {
+  display: block;
+}
+
+.retirement-gen .info small {
+  color: #555;
+}
+
+.retirement-gen button {
+  font: inherit;
+  padding: 8px 12px;
+  border: 2px solid #333;
+  background: #ccff00;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.retirement-gen button:disabled {
+  opacity: 0.5;
+  cursor: default;
+  background: #eee;
+}
+
+.retirement-message {
+  margin: 8px 0;
+  padding: 8px;
+  background: #fff8dc;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.retirement-note {
+  margin-top: 12px;
+  font-size: 11px;
+  color: #666;
+  text-align: center;
+}
+
+.retirement-rf-section {
+  margin-top: 12px;
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.retirement-rf-section button {
+  font: inherit;
+  padding: 10px 16px;
+  border: 2px solid #333;
+  background: #ccff00;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.retirement-rf-section button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+@media (max-width: 520px) {
+  .retirement-game {
+    padding: 8px;
+    font-size: 13px;
+  }
+  .retirement-header h1 {
+    font-size: 16px;
+  }
+  .retirement-stats {
+    grid-template-columns: 1fr;
+  }
+  .retirement-gen {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .retirement-gen button {
+    width: 100%;
+  }
+}
